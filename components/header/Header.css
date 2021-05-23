@@ -1,0 +1,29 @@
+:root {
+  --original-size-height: 428px;
+  --original-size-width: 1040px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: brown;
+  background-color: brown;
+  margin: 0;
+  height: 428px;
+}
+.header:hover img {
+  display: none;
+}
+.hidden-msg h1 {
+  margin: 0;
+}
+.hidden-msg {
+  z-index: -1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3vh;
+  display: none;
+}
+.header:hover .hidden-msg {
+  z-index: 1;
+  display: inline;
+}
